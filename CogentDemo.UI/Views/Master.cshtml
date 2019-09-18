@@ -1,0 +1,23 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Master>
+    @using ContentModels = Umbraco.Web.PublishedContentModels;
+    @{
+    Layout = null;
+    }
+
+<!doctype html>
+<html lang="en">
+    <head>
+        @RenderSection("Meta", false)
+        @RenderSection("headStyles", false)
+        @RenderSection("headScripts", false)
+    </head>
+    <body>
+        <div id="wrapper">
+            @RenderSection("ToggleTop", false)
+            @RenderSection("CGheader", false)
+            @RenderBody()
+            @RenderSection("CGfooter", false)
+            @RenderSection("footScripts", false)
+        </div>
+    </body>
+</html>
