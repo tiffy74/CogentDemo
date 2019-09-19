@@ -119,3 +119,6 @@ C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\obj\Debug\CogentDemo.UI.
 C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\obj\Debug\CogentDemo.UI.csproj.CopyComplete
 C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\obj\Debug\CogentDemo.UI.dll
 C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\obj\Debug\CogentDemo.UI.pdb
+C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\CogentDemo.Code.dll
+C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\CogentDemo.Code.pdb
+C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\bin\Debug\AutoMapper.Net4.dll

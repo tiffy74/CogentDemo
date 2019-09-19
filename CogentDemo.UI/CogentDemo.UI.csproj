@@ -334,9 +334,6 @@
     <Content Include="App_Data\NuGetBackup\20190918-170830\Config\Lang\ru-RU.user.xml" />
     <Content Include="App_Data\NuGetBackup\20190918-170830\Config\Lang\sv-SE.user.xml" />
     <Content Include="App_Data\NuGetBackup\20190918-170830\Config\Lang\zh-CN.user.xml" />
-    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
-    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
-    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
     <Content Include="bin\amd64\sqlceca40.dll" />
     <Content Include="bin\amd64\sqlcecompact40.dll" />
     <Content Include="bin\amd64\sqlceer40EN.dll" />
@@ -1821,7 +1818,6 @@
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
-    <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\trees.config" />
@@ -2047,6 +2043,7 @@
     <Content Include="Views\Master.cshtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\Layout.cshtml" />
+    <Content Include="Views\Article.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2064,6 +2061,12 @@
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\MacroPartials\" />
     <Folder Include="Views\Partials\Navigation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CogentDemo.Code\CogentDemo.Code.csproj">
+      <Project>{99159092-b326-4af0-97cd-73a8846dddef}</Project>
+      <Name>CogentDemo.Code</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CogentDemo.UI", "CogentDemo.UI\CogentDemo.UI.csproj", "{7943145D-4875-40CD-AE9A-BCD99CB5792C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CogentDemo.Code", "CogentDemo.Code\CogentDemo.Code.csproj", "{DF0EC2AA-F995-4B76-BF30-1A6599F0AC8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CogentDemo.Code", "CogentDemo.Code\CogentDemo.Code.csproj", "{99159092-B326-4AF0-97CD-73A8846DDDEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{7943145D-4875-40CD-AE9A-BCD99CB5792C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7943145D-4875-40CD-AE9A-BCD99CB5792C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7943145D-4875-40CD-AE9A-BCD99CB5792C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DF0EC2AA-F995-4B76-BF30-1A6599F0AC8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF0EC2AA-F995-4B76-BF30-1A6599F0AC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF0EC2AA-F995-4B76-BF30-1A6599F0AC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF0EC2AA-F995-4B76-BF30-1A6599F0AC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99159092-B326-4AF0-97CD-73A8846DDDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99159092-B326-4AF0-97CD-73A8846DDDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99159092-B326-4AF0-97CD-73A8846DDDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99159092-B326-4AF0-97CD-73A8846DDDEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

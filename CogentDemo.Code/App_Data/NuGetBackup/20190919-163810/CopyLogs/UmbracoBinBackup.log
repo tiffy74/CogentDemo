@@ -1,0 +1,27 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 19 September 2019 16:38:11
+   Source : C:\Users\prost001\source\repos\CogentDemo\CogentDemo.Code\bin\
+     Dest : C:\Users\prost001\source\repos\CogentDemo\CogentDemo.Code\App_Data\NuGetBackup\20190919-163810\bin\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.Code\bin\
+	  New Dir          0	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.Code\bin\Debug\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         2         1         1         0         0         0
+   Files :         0         0         0         0         0         0
+   Bytes :         0         0         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : 19 September 2019 16:38:11
+
