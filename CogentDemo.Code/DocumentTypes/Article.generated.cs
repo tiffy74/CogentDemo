@@ -22,7 +22,7 @@ namespace CogentDemo.Code.DocumentTypes
 {
 	/// <summary>Article</summary>
 	[PublishedContentModel("article")]
-	public partial class Article : Layout
+	public partial class Article : PublishedContentModel, IBannerPart, ICopyPart, ITitlePart
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "article";
@@ -43,6 +43,33 @@ namespace CogentDemo.Code.DocumentTypes
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Article, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Banner
+		///</summary>
+		[ImplementPropertyType("banner")]
+		public Umbraco.Web.Models.ImageCropDataSet Banner
+		{
+			get { return CogentDemo.Code.DocumentTypes.BannerPart.GetBanner(this); }
+		}
+
+		///<summary>
+		/// Text
+		///</summary>
+		[ImplementPropertyType("text")]
+		public IHtmlString Text
+		{
+			get { return CogentDemo.Code.DocumentTypes.CopyPart.GetText(this); }
+		}
+
+		///<summary>
+		/// Title
+		///</summary>
+		[ImplementPropertyType("title")]
+		public string Title
+		{
+			get { return CogentDemo.Code.DocumentTypes.TitlePart.GetTitle(this); }
 		}
 	}
 }

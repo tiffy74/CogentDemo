@@ -1,0 +1,136 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 23 September 2019 17:17:16
+   Source : C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\
+     Dest : C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\App_Data\NuGetBackup\20190923-171716\bin\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                  69	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\
+	    New File  		  166400	AutoMapper.dll  0%   78%  100%  
+	    New File  		   28672	AutoMapper.Net4.dll  0%  100%  
+	    New File  		  110592	businesslogic.dll  0%  100%  
+	    New File  		  150016	ClientDependency.Core.dll  0%   87%  100%  
+	    New File  		   23552	ClientDependency.Core.Mvc.dll  0%  100%  
+	    New File  		  454656	cms.dll  0%   28%   57%   86%  100%  
+	    New File  		    4096	CogentDemo.Code.dll  0%  100%  
+	    New File  		    9728	CogentDemo.Code.pdb  0%  100%  
+	    New File  		    4096	CogentDemo.UI.dll  0%  100%  
+	    New File  		   34531	CogentDemo.UI.dll.config  0%  100%  
+	    New File  		    7680	CogentDemo.UI.pdb  0%  100%  
+	    New File  		   50688	controls.dll  0%  100%  
+	    New File  		  120832	Examine.dll  0%  100%  
+	    New File  		  127488	HtmlAgilityPack.dll  0%  100%  
+	    New File  		  200704	ICSharpCode.SharpZipLib.dll  0%   65%  100%  
+	    New File  		  184320	ImageProcessor.dll  0%   71%  100%  
+	    New File  		  125952	ImageProcessor.Web.dll  0%  100%  
+	    New File  		   24576	interfaces.dll  0%  100%  
+	    New File  		   15872	Log4Net.Async.dll  0%  100%  
+	    New File  		  276480	log4net.dll  0%   47%   94%  100%  
+	    New File  		  786432	Lucene.Net.dll  0%   33%   66%  100%  
+	    New File  		   49152	MarkdownSharp.dll  0%  100%  
+	    New File  		   11264	Microsoft.ApplicationBlocks.Data.dll  0%  100%  
+	    New File  		  166032	Microsoft.AspNet.Identity.Core.dll  0%   78%  100%  
+	    New File  		   63112	Microsoft.AspNet.Identity.Owin.dll  0%  100%  
+	    New File  		  353840	Microsoft.AspNet.SignalR.Core.dll  0%   37%   74%  100%  
+	    New File  		   3.8 m	Microsoft.CodeAnalysis.CSharp.dll  0%   13%   26%   39%   52%   65%   78%   91%  100%  
+	    New File  		   1.6 m	Microsoft.CodeAnalysis.dll  0%   15%   30%   45%   60%   76%   91%  100%  
+	    New File  		   40168	Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll  0%  100%  
+	    New File  		    3187	Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml  0%  100%  
+	    New File  		   41328	Microsoft.IO.RecyclableMemoryStream.dll  0%  100%  
+	    New File  		  100456	Microsoft.Owin.dll  0%  100%  
+	    New File  		  134760	Microsoft.Owin.Host.SystemWeb.dll  0%   97%  100%  
+	    New File  		   36968	Microsoft.Owin.Security.Cookies.dll  0%  100%  
+	    New File  		   53872	Microsoft.Owin.Security.dll  0%  100%  
+	    New File  		   73840	Microsoft.Owin.Security.OAuth.dll  0%  100%  
+	    New File  		   45416	Microsoft.Web.Infrastructure.dll  0%  100%  
+	    New File  		  396288	MiniProfiler.dll  0%   33%   66%   99%  100%  
+	    New File  		  431616	MySql.Data.dll  0%   30%   60%   91%  100%  
+	    New File  		  675752	Newtonsoft.Json.dll  0%   38%   77%  100%  
+	    New File  		    4608	Owin.dll  0%  100%  
+	    New File  		   10240	Semver.dll  0%  100%  
+	    New File  		   21504	SQLCE4Umbraco.dll  0%  100%  
+	    New File  		  204544	System.Collections.Immutable.dll  0%   64%  100%  
+	    New File  		  470696	System.Data.SqlServerCe.dll  0%   27%   55%   83%  100%  
+	    New File  		  240808	System.Data.SqlServerCe.Entity.dll  0%   54%  100%  
+	    New File  		  178808	System.Net.Http.Formatting.dll  0%   73%  100%  
+	    New File  		  262896	System.Reflection.Metadata.dll  0%   49%   99%  100%  
+	    New File  		  173200	System.Threading.Tasks.Dataflow.dll  0%   75%  100%  
+	    New File  		   25232	System.ValueTuple.dll  0%  100%  
+	    New File  		  137144	System.Web.Helpers.dll  0%   95%  100%  
+	    New File  		  455096	System.Web.Http.dll  0%   28%   57%   86%  100%  
+	    New File  		   79288	System.Web.Http.WebHost.dll  0%  100%  
+	    New File  		  548280	System.Web.Mvc.dll  0%   47%   95%  100%  
+	    New File  		  263608	System.Web.Razor.dll  0%   49%   99%  100%  
+	    New File  		   43128	System.Web.WebPages.Deployment.dll  0%  100%  
+	    New File  		  206456	System.Web.WebPages.dll  0%   63%  100%  
+	    New File  		   40888	System.Web.WebPages.Razor.dll  0%  100%  
+	    New File  		  192512	TidyNet.dll  0%   68%  100%  
+	    New File  		   2.8 m	Umbraco.Core.dll  0%   17%   35%   53%   70%   88%  100%  
+	    New File  		   43008	umbraco.DataLayer.dll  0%  100%  
+	    New File  		   2.3 m	umbraco.dll  0%   21%   43%   65%   86%  100%  
+	    New File  		  368640	umbraco.editorControls.dll  0%   35%   71%  100%  
+	    New File  		  126976	umbraco.MacroEngines.dll  0%  100%  
+	    New File  		  105984	Umbraco.ModelsBuilder.dll  0%  100%  
+	    New File  		   36352	umbraco.providers.dll  0%  100%  
+	    New File  		    6656	Umbraco.Web.PublishedContentModels.dll  0%  100%  
+	    New File  		   40960	Umbraco.Web.UI.dll  0%  100%  
+	    New File  		   68096	UmbracoExamine.dll  0%  100%  
+	  New Dir          6	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\amd64\
+	    New File  		  464040	sqlceca40.dll  0%   28%   56%   84%  100%  
+	    New File  		  107176	sqlcecompact40.dll  0%  100%  
+	    New File  		  155304	sqlceer40EN.dll  0%   84%  100%  
+	    New File  		   81576	sqlceme40.dll  0%  100%  
+	    New File  		  909992	sqlceqp40.dll  0%   28%   57%   86%  100%  
+	    New File  		  562344	sqlcese40.dll  0%   46%   93%  100%  
+	  New Dir          3	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\amd64\Microsoft.VC90.CRT\
+	    New File  		    1862	Microsoft.VC90.CRT.manifest  0%  100%  
+	    New File  		  624448	msvcr90.dll  0%   41%   83%  100%  
+	    New File  		     406	README_ENU.txt  0%  100%  
+	  New Dir          0	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\App_Data\
+	  New Dir          0	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\App_Data\NuGetBackup\
+	  New Dir          0	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\App_Data\NuGetBackup\20190918-170758\
+	  New Dir          1	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\App_Data\NuGetBackup\20190918-170758\bin\
+	    New File  		   28672	AutoMapper.Net4.dll  0%  100%  
+	  New Dir          0	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\bin\
+	  New Dir          1	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\bin\Debug\
+	    New File  		   28672	AutoMapper.Net4.dll  0%  100%  
+	  New Dir          6	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\roslyn\
+	    New File  		   4.6 m	Microsoft.CodeAnalysis.CSharp.dll  0%   10%   21%   32%   42%   53%   64%   74%   85%   96%  100%  
+	    New File  		   2.5 m	Microsoft.CodeAnalysis.dll  0%   19%   38%   57%   77%   96%  100%  
+	    New File  		   5.1 m	Microsoft.CodeAnalysis.VisualBasic.dll  0%    9%   19%   28%   38%   48%   57%   67%   77%   86%   96%  100%  
+	    New File  		   1.4 m	Microsoft.DiaSymReader.Native.amd64.dll  0%   17%   35%   52%   70%   87%  100%  
+	    New File  		  111984	System.IO.Compression.dll  0%  100%  
+	    New File  		   87472	VBCSCompiler.exe  0%  100%  
+	  New Dir          6	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\x86\
+	    New File  		  350376	sqlceca40.dll  0%   37%   74%  100%  
+	    New File  		   91304	sqlcecompact40.dll  0%  100%  
+	    New File  		  154792	sqlceer40EN.dll  0%   84%  100%  
+	    New File  		   67752	sqlceme40.dll  0%  100%  
+	    New File  		  643240	sqlceqp40.dll  0%   40%   81%  100%  
+	    New File  		  406696	sqlcese40.dll  0%   32%   64%   96%  100%  
+	  New Dir          3	C:\Users\prost001\source\repos\CogentDemo\CogentDemo.UI\bin\x86\Microsoft.VC90.CRT\
+	    New File  		    1860	Microsoft.VC90.CRT.manifest  0%  100%  
+	    New File  		  653120	msvcr90.dll  0%   40%   80%  100%  
+	    New File  		     406	README_ENU.txt  0%  100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :        12        11         1         0         0         0
+   Files :        95        95         0         0         0         0
+   Bytes :   39.20 m   39.20 m         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :           255333590 Bytes/sec.
+   Speed :           14610.305 MegaBytes/min.
+   Ended : 23 September 2019 17:17:16
+
