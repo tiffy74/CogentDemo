@@ -410,6 +410,8 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
+    <Content Include="App_Plugins\Navigation\backoffice\navigationTree\edit.controller.js" />
+    <Content Include="App_Plugins\Navigation\navigation.resource.js" />
     <Content Include="App_Plugins\OptionButtonsPropertyEditor\css\OptionButtonsPropertyEditor.style.css" />
     <Content Include="App_Plugins\OptionButtonsPropertyEditor\js\OptionButtonsPropertyEditor.controller.js" />
     <Content Include="App_Plugins\OptionButtonsPropertyEditor\OptionButtonsPropertyEditor.html" />
@@ -2318,6 +2320,7 @@
     <Content Include="App_Plugins\FontAwesome\lib\fontawesome\fonts\fontawesome-webfont.woff" />
     <Content Include="App_Plugins\FontAwesome\lib\fontawesome\fonts\FontAwesome.otf" />
     <Content Include="App_Plugins\OptionButtonsPropertyEditor\package.manifest" />
+    <Content Include="App_Plugins\Navigation\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\GridPart.cshtml" />
     <Content Include="Views\Partials\Grid\Cogent-Grid.cshtml" />
@@ -2353,7 +2356,6 @@
     <Folder Include="App_Data\NuGetBackup\20190918-170830\Umbraco\" />
     <Folder Include="App_Data\NuGetBackup\20190918-170830\Umbraco_Client\" />
     <Folder Include="App_Plugins\CogentGrid\" />
-    <Folder Include="App_Plugins\Navigation\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\MacroPartials\" />

@@ -1,0 +1,6 @@
+﻿{
+    javascript: [
+        '~/App_Plugins/Navigation/backoffice/navigationTree/select.controller.js',
+        '~/App_Plugins/Navigation/navigation.resource.js'
+    ]
+}
