@@ -230,7 +230,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Controllers\SpotlightApiController.cs" />
+    <Compile Include="JsonHandler.cs" />
+    <Compile Include="Controllers\NavigationApiController.cs" />
     <Compile Include="DocumentTypes\Article.generated.cs" />
     <Compile Include="DocumentTypes\ArticleList.generated.cs" />
     <Compile Include="DocumentTypes\ArticleListSection.generated.cs" />
@@ -263,6 +265,8 @@
     <Compile Include="DocumentTypes\NavigationBase.generated.cs" />
     <Compile Include="DocumentTypes\RichTextContent.generated.cs" />
     <Compile Include="DocumentTypes\TitleComponent.generated.cs" />
+    <Compile Include="Models\NavigationApiModel.cs" />
+    <Compile Include="Models\SpotlightApiModel.cs" />
     <Compile Include="Models\ViewModels\ContactViewModel.cs" />
     <Compile Include="SurfaceControllers\ContactSurfaceController.cs" />
     <Compile Include="Extensions\CharExtensions.cs" />
@@ -400,7 +404,6 @@
   <ItemGroup>
     <Folder Include="App_Data\NuGetBackup\20190919-163810\bin\Debug\" />
     <Folder Include="bin\Release\" />
-    <Folder Include="Controllers\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
