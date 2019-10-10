@@ -22,7 +22,7 @@ namespace CogentDemo.Code.DocumentTypes
 {
 	/// <summary>Contact</summary>
 	[PublishedContentModel("contact")]
-	public partial class Contact : Layout
+	public partial class Contact : PublishedContentModel, IContentBase
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "contact";
@@ -43,6 +43,15 @@ namespace CogentDemo.Code.DocumentTypes
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Contact, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Nested Content
+		///</summary>
+		[ImplementPropertyType("nestedContent")]
+		public IEnumerable<IPublishedContent> NestedContent
+		{
+			get { return CogentDemo.Code.DocumentTypes.ContentBase.GetNestedContent(this); }
 		}
 	}
 }

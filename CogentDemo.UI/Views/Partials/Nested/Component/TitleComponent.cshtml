@@ -1,0 +1,40 @@
+﻿@inherits UmbracoViewPage
+@using System.Linq
+@using Umbraco.Web.Models
+@using CogentDemo.Code.DocumentTypes
+
+@{
+    /**/
+
+    string titleId = "nestedContent";
+    IEnumerable<IPublishedContent> title = Umbraco.AssignedContentItem.GetPropertyValue<IEnumerable<IPublishedContent>>(titleId);
+}
+
+@if (title != null)
+{
+            foreach (IPublishedContent item in title)
+            {
+                string articletitle = item.GetPropertyValue<string>("Title");
+                string articlesubtitle = item.GetPropertyValue<string>("Subtitle");
+
+                    if (articletitle != null)
+                    {
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 col-lg-offset-1 col-md-12">
+                                    <div class="intro">
+                                        <h1 class="text-center">@articletitle</h1>
+                                        <h3 class="text-center">@Html.Raw(articlesubtitle)</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+            }
+
+
+}
+
+
+

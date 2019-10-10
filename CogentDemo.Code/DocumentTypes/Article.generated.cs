@@ -22,7 +22,7 @@ namespace CogentDemo.Code.DocumentTypes
 {
 	/// <summary>Article</summary>
 	[PublishedContentModel("article")]
-	public partial class Article : PublishedContentModel, IBannerPart, ICopyPart, ITitlePart
+	public partial class Article : PublishedContentModel, IContentBase, IHeaderSection, INavigationBase
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "article";
@@ -46,30 +46,48 @@ namespace CogentDemo.Code.DocumentTypes
 		}
 
 		///<summary>
-		/// Banner
+		/// Nested Content
 		///</summary>
-		[ImplementPropertyType("banner")]
-		public Umbraco.Web.Models.ImageCropDataSet Banner
+		[ImplementPropertyType("nestedContent")]
+		public IEnumerable<IPublishedContent> NestedContent
 		{
-			get { return CogentDemo.Code.DocumentTypes.BannerPart.GetBanner(this); }
+			get { return CogentDemo.Code.DocumentTypes.ContentBase.GetNestedContent(this); }
 		}
 
 		///<summary>
-		/// Text
+		/// Image: Add an image to be used in the SPotlight for your article
 		///</summary>
-		[ImplementPropertyType("text")]
-		public IHtmlString Text
+		[ImplementPropertyType("headerImage")]
+		public IPublishedContent HeaderImage
 		{
-			get { return CogentDemo.Code.DocumentTypes.CopyPart.GetText(this); }
+			get { return CogentDemo.Code.DocumentTypes.HeaderSection.GetHeaderImage(this); }
+		}
+
+		///<summary>
+		/// Snippet: Provide a brief summary of the article
+		///</summary>
+		[ImplementPropertyType("headerSubtitle")]
+		public string HeaderSubtitle
+		{
+			get { return CogentDemo.Code.DocumentTypes.HeaderSection.GetHeaderSubtitle(this); }
 		}
 
 		///<summary>
 		/// Title
 		///</summary>
-		[ImplementPropertyType("title")]
-		public string Title
+		[ImplementPropertyType("headerTitle")]
+		public string HeaderTitle
 		{
-			get { return CogentDemo.Code.DocumentTypes.TitlePart.GetTitle(this); }
+			get { return CogentDemo.Code.DocumentTypes.HeaderSection.GetHeaderTitle(this); }
+		}
+
+		///<summary>
+		/// seoMetaDescription
+		///</summary>
+		[ImplementPropertyType("seoMetaDescription")]
+		public string SeoMetaDescription
+		{
+			get { return CogentDemo.Code.DocumentTypes.NavigationBase.GetSeoMetaDescription(this); }
 		}
 	}
 }

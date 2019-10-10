@@ -1,0 +1,51 @@
+﻿@inherits UmbracoViewPage
+@using CogentDemo.Code.DocumentTypes;
+@using Umbraco.Web.Models
+
+@{
+    /**/
+
+    string actionId = "nestedContent";
+    IEnumerable<IPublishedContent> callItems = Umbraco.AssignedContentItem.GetPropertyValue<IEnumerable<IPublishedContent>>(actionId);
+}
+
+@if (callItems != null && callItems.Any())
+{
+<section class="callaction">
+    @{
+        foreach (IPublishedContent callItem in callItems)
+        {
+            string calltitle = callItem.GetPropertyValue<string>("callTitle");
+            string callcontent = callItem.GetPropertyValue<string>("callContent");
+            var calllink = callItem.GetPropertyValue<Link>("callLink");
+
+            if (callcontent != null)
+            {
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <div class="big-cta">
+                                <div class="cta-text">
+                                    <h3>@Html.Raw(callcontent)</h3>
+                                </div>
+                                @if (calllink != null)
+                                {
+                                <div class="cta floatright">
+                                    <a class="btn btn-large btn-theme btn-rounded" href="@calllink.Url">@calltitle</a>
+                                </div>
+                                }
+                                else
+                                {
+                                <div class="cta floatright">
+                                    <a class="btn btn-large btn-theme btn-rounded" href="/home">@calltitle</a>
+                                </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            }
+        }
+    </section>
+}

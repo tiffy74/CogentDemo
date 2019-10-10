@@ -22,7 +22,7 @@ namespace CogentDemo.Code.DocumentTypes
 {
 	/// <summary>Home</summary>
 	[PublishedContentModel("home")]
-	public partial class Home : Layout
+	public partial class Home : Layout, IContentSection
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "home";
@@ -43,6 +43,15 @@ namespace CogentDemo.Code.DocumentTypes
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Home, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// nestedContent
+		///</summary>
+		[ImplementPropertyType("nestedContent")]
+		public IEnumerable<IPublishedContent> NestedContent
+		{
+			get { return CogentDemo.Code.DocumentTypes.ContentSection.GetNestedContent(this); }
 		}
 	}
 }

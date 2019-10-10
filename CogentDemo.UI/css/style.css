@@ -474,7 +474,6 @@ select.selectmenu {
 }
 
 .nivo-slider img {
-  position: absolute;
   top: 0px;
   left: 0px;
   max-width: none;

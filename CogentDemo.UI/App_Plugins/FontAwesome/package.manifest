@@ -1,0 +1,33 @@
+﻿{
+    propertyEditors: [
+        {
+                alias: "CogentDemo.FontAwesome",
+                name: "Font Awesome Icon",
+				icon: "icon-colorpicker",
+				group: "pickers",
+                editor: {
+                view: "~/App_Plugins/FontAwesome/fontawesome.html"
+                },
+                prevalues: {
+                        fields: [
+						{
+				  	"label": "Minimum number of items",
+					"description": "",
+					"key": "minNumber",
+					"view": "number"
+				  },
+				    {
+				  	"label": "Maximum number of items",
+					"description": "",
+					"key": "maxNumber",
+					"view": "number"
+				  }
+                               
+                        ]
+                }
+        }
+    ],
+    javascript: [
+        "~/App_Plugins/FontAwesome/fontawesome.controller.js"
+    ]
+}

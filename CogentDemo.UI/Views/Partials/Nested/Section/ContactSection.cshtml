@@ -1,0 +1,59 @@
+﻿@inherits UmbracoViewPage<CogentDemo.Code.Models.ViewModels.ContactViewModel>
+
+@using (Html.BeginUmbracoForm("SubmitForm", "ContactSurface", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="form-group">
+            <div class="span4">
+                @Html.ValidationSummary()
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="span4">
+                @Html.LabelFor(m => m.FirstName)
+            </div>
+            <div class="span4">
+                @Html.TextBoxFor(m => m.FirstName)
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="span4">
+                @Html.LabelFor(m => m.LastName)
+            </div>
+            <div class="span4">
+                @Html.TextBoxFor(m => m.LastName)
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="span4">
+                @Html.LabelFor(m => m.EmailAddress)
+            </div>
+            <div class="span4">
+                @Html.TextBoxFor(m => m.EmailAddress)
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="span4 margintop10">
+                @Html.LabelFor(m => m.Message)
+            </div>
+            <div class="span4 margintop10">
+                @Html.TextAreaFor(m => m.Message)
+            </div>
+            <div class="span12 margintop10">
+                <p class="text-center">
+                    <button class="btn btn-large btn-theme margintop10" type="submit">Submit message</button>
+                </p>
+            </div>
+
+        </div>
+    </div>
+}

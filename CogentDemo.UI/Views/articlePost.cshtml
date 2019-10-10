@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@using Umbraco.Web.Models
+@using System.Collections.Generic;
+@using ClientDependency.Core.Mvc
+@using CogentDemo.Code.DocumentTypes;
+@{
+    Layout = "Layout.cshtml";
+}
+
+
+
+@{ Html.RenderPartial("Partials/Nested/Section/BannerSection"); }
+
+@{ Html.RenderPartial("Partials/Nested/Section/CallToActionSection"); }
+
+@{ Html.RenderPartial("Partials/Nested/Component/TitleComponent"); }
+
+@{ Html.RenderPartial("Partials/Nested/Section/ImageSection"); }
+
+@{ Html.RenderPartial("Partials/Nested/Item/Article"); }

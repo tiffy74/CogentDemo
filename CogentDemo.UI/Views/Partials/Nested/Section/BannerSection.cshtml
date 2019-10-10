@@ -1,0 +1,60 @@
+﻿@inherits UmbracoViewPage
+@using System.Linq
+@using Umbraco.Web.Models
+@using CogentDemo.Code.DocumentTypes
+
+@{
+    /**/
+
+    string bannerId = "nestedContent";
+    IEnumerable<IPublishedContent> banner = Umbraco.AssignedContentItem.GetPropertyValue<IEnumerable<IPublishedContent>>(bannerId);
+}
+@if (banner != null)
+{
+    <section id="featured">
+        @{
+
+
+
+            foreach (IPublishedContent item in banner)
+            {
+                string bannertitle = item.GetPropertyValue<string>("bannerTitle");
+                string bannersubtitle = item.GetPropertyValue<string>("bannerSubtitle");
+                string bannerimageUrl = item.HasValue("Background") ? item.GetPropertyValue<IPublishedContent>("Background").Url : "/img/slides/nivo/bg1.png";
+                var bannerlink = item.GetPropertyValue<Link>("primaryLink");
+                string bannerlinktext = item.GetPropertyValue<string>("primaryLinkText");
+
+                <div id="heroBanner">
+                    <div class="heroBanner">
+                        <img src="@bannerimageUrl" alt="" title="#caption-1" style="background-image:url('@bannerimageUrl');" />
+                    </div>
+                    @if (bannertitle != null)
+                    {
+                        <div class="container">
+                            <div class="row">
+                                <div class="span12">
+                                    <!-- Slide #1 caption -->
+                                    <div class="banner-caption" id="caption-1">
+                                        <div>
+                                            <h2>@bannertitle</h2>
+                                            <p>
+                                                @bannersubtitle
+                                            </p>
+                                            @if (bannerlink != null)
+                                            {
+                                                <a href="@bannerlink.Url" class="btn btn-theme">@bannerlinktext</a>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            }
+
+
+        }
+    </section>
+}

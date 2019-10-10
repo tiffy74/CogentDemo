@@ -1,0 +1,75 @@
+﻿@inherits UmbracoViewPage
+@using Umbraco.Web.Models
+@using CogentDemo.Code.DocumentTypes
+@{
+	Layout = "Master.cshtml";
+}
+
+@* the fun starts here *@
+
+@section CGheader
+    {
+    @{string NavId = "navigation";
+    IEnumerable<IPublishedContent> navigation = Umbraco.AssignedContentItem.GetPropertyValue<IEnumerable<IPublishedContent>>(NavId);
+    }
+    
+
+    <header>
+        <div class="container ">
+
+
+            <div class="row nomargin">
+                <div class="span12">
+
+                    <div class="headnav">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                @if (navigation != null)
+                {
+                    foreach (IPublishedContent item in navigation)
+                    {
+                        string NavContent = item.GetPropertyValue<string>("siteTitle");
+                        var NavUrl = item.GetPropertyValue<IPublishedContent>("brandLink");
+                        var brandLogo = item.GetPropertyValue<IPublishedContent>("brandLogo");
+                        var NavItems = item.GetPropertyValue<IEnumerable<Link>>("MainNavigation");
+                        if (NavContent != null)
+                        {
+
+                            <div class="span4">
+                                <div class="navbar">
+                                    <a href="@NavUrl">@NavContent</a>
+                                </div>
+                            </div>
+                        }
+
+                        <div class="span8">
+                            <div class="navbar navbar-static-top">
+                                <div class="navigation">
+                                    <nav>
+                                        <ul class="nav topnav">
+                                            @if (NavItems != null)
+                                            {
+                                                foreach (var Navitem in NavItems)
+                                                {
+                                                    <li>
+                                                        <a href="@Navitem.Url">@Navitem.Name</a>
+                                                    </li>
+                                                }
+                                            }
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- end navigation -->
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </header>
+}

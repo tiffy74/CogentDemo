@@ -1,5 +1,22 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Contact>
-@using ContentModels = CogentDemo.Code.DocumentTypes;
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using CogentDemo.Code.Models.ViewModels
+
 @{
-	Layout = null;
+    Layout = "Layout.cshtml";
 }
+
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <h4>Get in touch with us by filling <strong>contact form below</strong></h4>
+            @if (TempData["ContactSuccess"] != null && (bool)TempData["ContactSuccess"])
+            {
+                <p>Your message was sent successfully</p>
+            }
+            else
+            {
+                Html.RenderAction("RenderForm", "ContactSurface");
+            }
+        </div>
+    </div>
+</div>

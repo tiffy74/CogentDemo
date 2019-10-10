@@ -143,6 +143,7 @@
     <Reference Include="System.Collections.Immutable, Version=1.1.36.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Collections.Immutable.1.1.36\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -230,6 +231,47 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DocumentTypes\Article.generated.cs" />
+    <Compile Include="DocumentTypes\ArticleList.generated.cs" />
+    <Compile Include="DocumentTypes\ArticleListSection.generated.cs" />
+    <Compile Include="DocumentTypes\ArticlePost.generated.cs" />
+    <Compile Include="DocumentTypes\Articles.generated.cs" />
+    <Compile Include="DocumentTypes\BannerSection.generated.cs" />
+    <Compile Include="DocumentTypes\CallToActionSection.generated.cs" />
+    <Compile Include="DocumentTypes\ColumnSettings.generated.cs" />
+    <Compile Include="DocumentTypes\Contact.generated.cs" />
+    <Compile Include="DocumentTypes\ContactFormSection.generated.cs" />
+    <Compile Include="DocumentTypes\ContentBase.generated.cs" />
+    <Compile Include="DocumentTypes\ContentSection.generated.cs" />
+    <Compile Include="DocumentTypes\File.generated.cs" />
+    <Compile Include="DocumentTypes\Folder.generated.cs" />
+    <Compile Include="DocumentTypes\FooterSection.generated.cs" />
+    <Compile Include="DocumentTypes\HeaderSection.generated.cs" />
+    <Compile Include="DocumentTypes\Home.generated.cs" />
+    <Compile Include="DocumentTypes\Image.generated.cs" />
+    <Compile Include="DocumentTypes\ImageComposition.generated.cs" />
+    <Compile Include="DocumentTypes\ImageContent.generated.cs" />
+    <Compile Include="DocumentTypes\ImageSection.generated.cs" />
+    <Compile Include="DocumentTypes\Layout.generated.cs" />
+    <Compile Include="DocumentTypes\LinkComponent.generated.cs" />
+    <Compile Include="DocumentTypes\LinksComponent.generated.cs" />
+    <Compile Include="DocumentTypes\ListingPageBase.generated.cs" />
+    <Compile Include="DocumentTypes\Master.generated.cs" />
+    <Compile Include="DocumentTypes\Member.generated.cs" />
+    <Compile Include="DocumentTypes\Nav.generated.cs" />
+    <Compile Include="DocumentTypes\Navigation.generated.cs" />
+    <Compile Include="DocumentTypes\NavigationBase.generated.cs" />
+    <Compile Include="DocumentTypes\RichTextContent.generated.cs" />
+    <Compile Include="DocumentTypes\TitleComponent.generated.cs" />
+    <Compile Include="Models\ViewModels\ContactViewModel.cs" />
+    <Compile Include="SurfaceControllers\ContactSurfaceController.cs" />
+    <Compile Include="Extensions\CharExtensions.cs" />
+    <Compile Include="Extensions\DateExtensions.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\HtmlStringExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Helpers\RazorHelper.cs" />
+    <Compile Include="Models\ViewModels\ArticlesViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -358,7 +400,7 @@
   <ItemGroup>
     <Folder Include="App_Data\NuGetBackup\20190919-163810\bin\Debug\" />
     <Folder Include="bin\Release\" />
-    <Folder Include="DocumentTypes\" />
+    <Folder Include="Controllers\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

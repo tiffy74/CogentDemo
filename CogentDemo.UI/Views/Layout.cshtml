@@ -1,109 +1,52 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Layout>
-    @using ContentModels = Umbraco.Web.PublishedContentModels;
-    @{
-    Layout = "Master.cshtml";
-    }
+﻿@inherits UmbracoViewPage<Layout>
 
-    @section Meta
+@using CogentDemo.Code.DocumentTypes;
+
+@{
+    /**/
+
+    Layout = "Master.cshtml";
+}
+
+@section Meta
     {
     <meta charset="utf-8">
     <title>Cogent Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    }
+}
 
-    @section headStyles
+@section headStyles
     {
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
-    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-    <link href="css/jcarousel.css" rel="stylesheet" />
-    <link href="css/flexslider.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="~/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="~/css/jcarousel.css" rel="stylesheet" />
+    <link href="~/css/flexslider.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
     <!-- Theme skin -->
-    <link href="skins/cogent.css" rel="stylesheet" />
+    <link href="~/skins/Cogent.css" rel="stylesheet" />
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
     <link rel="shortcut icon" href="ico/favicon.png" />
-    }
+}
 
-    @section headScripts
+@section headScripts
     {
-    }
+}
 
 
-    @section CGheader
-    {
-    <header>
-        <div class="container ">
-           
+@{ Html.RenderPartial("Partials/NavSection"); }
 
-            <div class="row nomargin">
-                <div class="span12">
-                    
-                    <div class="headnav">
+@RenderBody()
 
-                    </div>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="span4">
-                    <div class="logo">
-                        <a href="index.html"><img src="img/logo.png" alt="" class="logo" /></a>
-                        <h1>Cogent Demo Site</h1>
-                    </div>
-                </div>
-                <div class="span8">
-                    <div class="navbar navbar-static-top">
-                        <div class="navigation">
-                            <nav>
-                                <ul class="nav topnav">
-                                    <li class="dropdown active">
-                                        <a href="index.html">Home <i class="icon-angle-down"></i></a>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Articles <i class="icon-angle-down"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="typography.html">Typography</a></li>
-                                            <li><a href="table.html">Table</a></li>
-                                            <li><a href="components.html">Components</a></li>
-                                            <li><a href="animations.html">56 Animations</a></li>
-                                            <li><a href="icons.html">Icons</a></li>
-                                            <li><a href="icon-variations.html">Icon variations</a></li>
-                                            <li class="dropdown">
-                                                <a href="#">3 Sliders <i class="icon-angle-right"></i></a>
-                                                <ul class="dropdown-menu sub-menu-level1">
-                                                    <li><a href="index.html">Nivo slider</a></li>
-                                                    <li><a href="index-alt2.html">Slit slider</a></li>
-                                                    <li><a href="index-alt3.html">Parallax slider</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- end navigation -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    }
-
-    @RenderBody()
-
-    @section CGfooter
+@section CGfooter
     {
     <footer>
         <div class="container">
@@ -112,9 +55,9 @@
                     <div class="widget">
                         <h5 class="widgetheading">Browse pages</h5>
                         <ul class="link-list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Articles</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="Home">Home</a></li>
+                            <li><a href="Articles">Articles</a></li>
+                            <li><a href="Contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -133,27 +76,20 @@
             </div>
         </div>
     </footer>
-    }
+}
 
 
-    @section footScripts
+@section footScripts
     {
     <script src="~/scripts/jquery.js"></script>
     <script src="~/scripts/bootstrap.js"></script>
-    <script src="~/scripts/jcarousel/jquery.jcarousel.min.js"></script>
     <script src="~/scripts/jquery.fancybox.pack.js"></script>
     <script src="~/scripts/jquery.fancybox-media.js"></script>
     <script src="~/js/google-code-prettify/prettify.js"></script>
-    <script src="~/scripts/portfolio/jquery.quicksand.js"></script>
-    <script src="~/scripts/portfolio/setting.js"></script>
-    <script src="~/scripts/jquery.flexslider.js"></script>
-    <script src="~/scripts/jquery.nivo.slider.js"></script>
     <script src="~/scripts/modernizr.custom.js"></script>
-    <script src="~/scripts/jquery.ba-cond.min.js"></script>
-    <script src="~/scripts/jquery.slitslider.js"></script>
-    <script src="~/scripts/animate.js"></script>
 
-    <!-- Template Custom JavaScript File -->
-    <script src="~/scripts/custom.js"></script>
 
-    }
+    <!-- Template Custom JavaScript File
+    <script src="~/scripts/custom.js"></script>-->
+
+}

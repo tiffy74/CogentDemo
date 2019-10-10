@@ -1,0 +1,38 @@
+﻿@inherits UmbracoViewPage
+
+@{
+    string articleId = "nestedContent";
+    IEnumerable<IPublishedContent> article = Umbraco.AssignedContentItem.GetPropertyValue<IEnumerable<IPublishedContent>>(articleId);
+}
+@if (article != null)
+{
+    foreach (IPublishedContent item in article)
+    {
+        string articleContent = item.GetPropertyValue<string>("text");
+        var imageUrl = item.GetPropertyValue<IPublishedContent>("Image");
+        if (articleContent != null)
+        {
+           <section id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="span8">
+                            <article>
+                                <div class="row">
+                                    <div class="span8"> 
+                                        <p>
+                                            @Html.Raw(articleContent)
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                                    
+        }
+
+
+    }
+}
+
