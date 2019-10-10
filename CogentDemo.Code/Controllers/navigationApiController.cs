@@ -7,8 +7,9 @@ using System.Web.Http;
 using Umbraco.Web;
 using Umbraco.Web.WebApi;
 using CogentDemo.Code.Models;
+using Umbraco.Web.Editors;
 
-namespace CogentDemo.Code.Controllers
+namespace CogentDemo.Code.SurfaceControllers
 {
     [Route("api/[controller]")]
     public class NavigationApiController : UmbracoApiController

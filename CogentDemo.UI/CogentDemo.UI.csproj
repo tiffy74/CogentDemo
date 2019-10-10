@@ -2325,7 +2325,7 @@
     <Content Include="Views\GridPart.cshtml" />
     <Content Include="Views\Partials\Grid\Cogent-Grid.cshtml" />
     <Content Include="Views\Partials\Navigation\SubNavigation.cshtml" />
-    <Content Include="Views\Partials\NavSection.cshtml" />
+    <Content Include="Views\Partials\Navigation\NavSection.cshtml" />
     <Content Include="Views\Partials\Nested\Component\LinkComponent.cshtml" />
     <Content Include="Views\Partials\Nested\Component\SectionTitleComponent.cshtml" />
     <Content Include="Views\Partials\Nested\Component\TitleComponent.cshtml" />

@@ -13,7 +13,7 @@ using umbraco;
 using System.Net.Http.Formatting;
 using System.Linq;
 
-namespace CogentDemo.Code.Controllers
+namespace CogentDemo.Code.SurfaceControllers
 {
     [Tree("content", "navigationAlias", "Navigation")]
     public class NavTreeController : TreeController

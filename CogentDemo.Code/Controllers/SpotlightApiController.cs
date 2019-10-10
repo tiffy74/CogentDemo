@@ -8,7 +8,7 @@ using Umbraco.Web;
 using Umbraco.Web.WebApi;
 using CogentDemo.Code.Models;
 
-namespace CogentDemo.Code.Controllers
+namespace CogentDemo.Code.SurfaceControllers
 {
     [Route("api/[controller]")]
     public class SpotlightApiController : UmbracoApiController
