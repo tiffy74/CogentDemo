@@ -25,81 +25,70 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="~/css/bootstrap.css" rel="stylesheet" />
     <link href="~/css/bootstrap-responsive.css" rel="stylesheet" />
-    <link href="~/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-    <link href="~/css/jcarousel.css" rel="stylesheet" />
-    <link href="~/css/flexslider.css" rel="stylesheet" />
-    <link href="~/css/style.css" rel="stylesheet" />
-    <!-- Theme skin -->
-    <link href="~/skins/Cogent.css" rel="stylesheet" />
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
-    <link rel="shortcut icon" href="ico/favicon.png" />
-}
+    <!--<link href="~/css/style.css" rel="stylesheet" />-->
+    <link href="~/css/cogentDemo.css" rel="stylesheet" />
+    <!--<link href="~/css/overwrite.css" rel="stylesheet" />-->
+        <link href="/css/style.css" rel="stylesheet">
 
-@section headScripts
-    {
-}
+    }
+
+    @section headScripts
+            {
+    }
 
 
-@*{ Html.RenderPartial("Partials/Navigation/SiteNavigation"); }*@
+    @*{ Html.RenderPartial("Partials/Navigation/SiteNavigation"); }*@
 
-@section CGheader
-    {
+    @section CGheader
+            {
 
-    @{ Html.RenderAction("RenderSiteNavigation", "NavigationSurface");}
+        @{ Html.RenderAction("RenderSiteNavigation", "NavigationSurface");}
 
-}
+    }
 
 
-@RenderBody()
+    @RenderBody()
 
-@section CGfooter
-    {
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="span3">
-                    <div class="widget">
-                        <h5 class="widgetheading">Browse pages</h5>
-                        <ul class="link-list">
-                            <li><a href="Home">Home</a></li>
-                            <li><a href="Articles">Articles</a></li>
-                            <li><a href="Contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="sub-footer">
+    @section CGfooter
+            {
+        <footer>
             <div class="container">
                 <div class="row">
-                    <div class="span6">
-
-                    </div>
-                    <div class="span6">
-
+                    <div class="span3">
+                        <div class="widget">
+                            <h5 class="widgetheading">Browse pages</h5>
+                            <ul class="link-list">
+                                <li><a href="Home">Home</a></li>
+                                <li><a href="Articles">Articles</a></li>
+                                <li><a href="Contact">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-}
+            <div id="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="span6">
+
+                        </div>
+                        <div class="span6">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    }
 
 
-@section footScripts
-    {
-    <script src="~/scripts/jquery.js"></script>
-    <script src="~/scripts/bootstrap.js"></script>
-    <script src="~/scripts/jquery.fancybox.pack.js"></script>
-    <script src="~/scripts/jquery.fancybox-media.js"></script>
-    <script src="~/js/google-code-prettify/prettify.js"></script>
-    <script src="~/scripts/modernizr.custom.js"></script>
-
-
-    <!-- Template Custom JavaScript File
-    <script src="~/scripts/custom.js"></script>-->
-
-}
+    @section footScripts
+            {
+        <script src="~/scripts/jquery.js"></script>
+        <script src="~/scripts/bootstrap.js"></script>
+        <script src="~/js/google-code-prettify/prettify.js"></script>
+        <script src="~/scripts/modernizr.custom.js"></script>
+        <script src="~/scripts/custom.js"></script>
+        <script src="/scripts/jquery.fancybox.pack.js"></script>
+        <script src="/scripts/jquery.fancybox-media.js"></script>
+    }

@@ -18,56 +18,56 @@
     IEnumerable<IPublishedContent> article = Umbraco.AssignedContentItem.GetPropertyValue<IEnumerable<IPublishedContent>>(articleId);
 }
 
+@{ Html.RenderPartial("Partials/Nested/Section/ContentSection"); }
 
 @if (articleList.Any())
 {
 
-<div class="article slide" data-ride="article" id="@articleId">
-    <section id="content">
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                    <h4>@Umbraco.Field("listTitle")</h4>
+    <div class="article slide" data-ride="article" id="@articleId">
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <h4>@Umbraco.Field("listTitle")</h4>
+                    </div>
                 </div>
-            </div>
-            @{
-                int articleCount = 0;
-                foreach (IPublishedContent item in articleList.OrderByDescending(x => x.GetPropertyValue<DateTime>("articleDate")).Take(itemsToShow))
-                {
-                    string title = item.HasValue("headerTitle") ? item.GetPropertyValue<string>("headerTitle") : item.Name;
-                    string description = item.HasValue("headerSubTitle") ? item.GetPropertyValue<string>("headerSubTitle") : item.Name;
-                    var imageUrl = item.HasValue("headerImage") ? item.GetPropertyValue<IPublishedContent>("headerImage").Url : "img/no-thumb.jpg";
+                @{
+                    int articleCount = 0;
+                    foreach (IPublishedContent item in articleList.OrderByDescending(x => x.GetPropertyValue<DateTime>("articleDate")).Take(itemsToShow))
+                    {
+                        string title = item.HasValue("headerTitle") ? item.GetPropertyValue<string>("headerTitle") : item.Name;
+                        string description = item.HasValue("headerSubTitle") ? item.GetPropertyValue<string>("headerSubTitle") : item.Name;
+                        var imageUrl = item.HasValue("headerImage") ? item.GetPropertyValue<IPublishedContent>("headerImage").Url : "img/no-thumb.jpg";
 
-                    <div class="item @(articleCount == 0 ? "active" : "")">
-                        <div class="span3">
-                            <div class="spotlight">
-                                <div class="spotlightItems">
-                                    <img class="spotlightImg" src="@imageUrl" style="background-image:url('@imageUrl')">
-                                    <div class="centered_SpotlightText">
-                                        <h6 class="spotlightHeading"><a href="@item.Url">@title</a></h6>
-                                        <p>
-                                            @description
-                                    </p>
-                                    <a href="@item.Url">Read more</a>
+                        <div class="item @(articleCount == 0 ? "active" : "")">
+                            <div class="span3">
+                                <div class="spotlight">
+                                    <div class="spotlightItems">
+                                        <img class="spotlightImg" src="@imageUrl" style="background-image:url('@imageUrl')">
+                                        <div class="centered_SpotlightText">
+                                            <h6 class="spotlightHeading"><a href="@item.Url">@title</a></h6>
+                                            <p>
+                                                @description
+                                            </p>
+                                            <a href="@item.Url">Read more</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        articleCount++;
+                    }
+                }
+                <div class="row">
+                    <div class="span12">
+                        <a href="#" class="btn btn-theme load-more-articles" role="button" data-slide="next">
+                            Load More..
+                        </a>
                     </div>
                 </div>
-                articleCount++;
-                }
-            }
-            <div class="row">
-                <div class="span12">
-                    <a href="#" class="btn btn-theme" role="button" data-slide="next">
-                        Load More..
-                    </a>
-                </div>
             </div>
-        </div>
-    </section>
-</div>
-
+        </section>
+    </div>
 }
 
 
