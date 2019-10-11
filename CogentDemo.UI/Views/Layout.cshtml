@@ -1,6 +1,8 @@
 ﻿@inherits UmbracoViewPage<Layout>
 
 @using CogentDemo.Code.DocumentTypes;
+@using CogentDemo.Code.Models;
+@using CogentDemo.Code.SurfaceControllers;
 
 @{
     /**/
@@ -42,7 +44,15 @@
 }
 
 
-@{ Html.RenderPartial("Partials/NavSection"); }
+@*{ Html.RenderPartial("Partials/Navigation/SiteNavigation"); }*@
+
+@section CGheader
+    {
+
+    @{ Html.RenderAction("RenderSiteNavigation", "NavigationSurface");}
+
+}
+
 
 @RenderBody()
 

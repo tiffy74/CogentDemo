@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace CogentDemo.Code.Models
 {
-    class NavigationModel
-    {
         public class NavigationLinkInfo
         {
             public string Text { get; set; }
@@ -36,4 +34,3 @@ namespace CogentDemo.Code.Models
             public NavigationList(NavigationLinkInfo link) { Link = link; }
         }
     }
-}

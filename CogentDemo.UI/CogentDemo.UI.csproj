@@ -2344,7 +2344,7 @@
     <Content Include="Views\articlePost.cshtml" />
     <Content Include="Views\Articles.cshtml" />
     <Content Include="Views\Partials\Nested\Section\ContactSection.cshtml" />
-    <Content Include="Views\SiteNavigation.cshtml" />
+    <Content Include="Views\Partials\Navigation\SiteNavigation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

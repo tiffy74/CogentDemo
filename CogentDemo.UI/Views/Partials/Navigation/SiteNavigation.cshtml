@@ -1,0 +1,38 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<List<NavigationList>>
+@using Umbraco.Web;
+@using Umbraco.Web.Models
+@using CogentDemo.Code.Models
+
+
+<div class="Container">
+    <div class="Row">
+        <div class="span8">
+            <div class="navbar navbar-static-top">
+                <div class="navigation">
+                    <nav>
+                        <ul class="nav topnav">
+                            @RenderSubItems(Model)
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end navigation -->
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+@helper RenderSubItems(List<NavigationList> listItems)
+{
+    if (listItems != null)
+    {
+        foreach (var item in listItems)
+        {
+            <a href="@item.Link.Url" target="@item.Link.Target">@item.Link.Text</a>
+            if (item.HasSubNavigation)
+            {
+                @RenderSubItems(item.NavItems)
+            }
+        }
+    }
+}
