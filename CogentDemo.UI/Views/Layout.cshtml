@@ -2,7 +2,7 @@
 
 @using CogentDemo.Code.DocumentTypes;
 @using CogentDemo.Code.Models;
-@using CogentDemo.Code.SurfaceControllers;
+@using CogentDemo.Code.Controllers;
 
 @{
     /**/
@@ -28,67 +28,69 @@
     <!--<link href="~/css/style.css" rel="stylesheet" />-->
     <link href="~/css/cogentDemo.css" rel="stylesheet" />
     <!--<link href="~/css/overwrite.css" rel="stylesheet" />-->
-        <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/load-more-button.css" rel="stylesheet">
 
-    }
+}
 
-    @section headScripts
+@section headScripts
             {
-    }
+}
 
 
-    @*{ Html.RenderPartial("Partials/Navigation/SiteNavigation"); }*@
+@*{ Html.RenderPartial("Partials/Navigation/SiteNavigation"); }*@
 
-    @section CGheader
+@section CGheader
             {
 
-        @{ Html.RenderAction("RenderSiteNavigation", "NavigationSurface");}
+    @{ Html.RenderAction("RenderSiteNavigation", "NavigationSurface");}
 
-    }
+}
 
 
-    @RenderBody()
+@RenderBody()
 
-    @section CGfooter
+@section CGfooter
             {
-        <footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="span3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Browse pages</h5>
+                        <ul class="link-list">
+                            <li><a href="Home">Home</a></li>
+                            <li><a href="Articles">Articles</a></li>
+                            <li><a href="Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sub-footer">
             <div class="container">
                 <div class="row">
-                    <div class="span3">
-                        <div class="widget">
-                            <h5 class="widgetheading">Browse pages</h5>
-                            <ul class="link-list">
-                                <li><a href="Home">Home</a></li>
-                                <li><a href="Articles">Articles</a></li>
-                                <li><a href="Contact">Contact</a></li>
-                            </ul>
-                        </div>
+                    <div class="span6">
+
+                    </div>
+                    <div class="span6">
+
                     </div>
                 </div>
             </div>
-            <div id="sub-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="span6">
-
-                        </div>
-                        <div class="span6">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    }
+        </div>
+    </footer>
+}
 
 
-    @section footScripts
+@section footScripts
             {
-        <script src="~/scripts/jquery.js"></script>
-        <script src="~/scripts/bootstrap.js"></script>
-        <script src="~/js/google-code-prettify/prettify.js"></script>
-        <script src="~/scripts/modernizr.custom.js"></script>
-        <script src="~/scripts/custom.js"></script>
-        <script src="/scripts/jquery.fancybox.pack.js"></script>
-        <script src="/scripts/jquery.fancybox-media.js"></script>
-    }
+    <script src="~/scripts/jquery.js"></script>
+    <script src="~/scripts/bootstrap.js"></script>
+    <script src="~/js/google-code-prettify/prettify.js"></script>
+    <script src="~/scripts/modernizr.custom.js"></script>
+    <script src="~/scripts/custom.js"></script>
+    <script src="/scripts/jquery.fancybox.pack.js"></script>
+    <script src="/scripts/jquery.fancybox-media.js"></script>
+    <script src="~/scripts/load-more-button.js"></script>
+}

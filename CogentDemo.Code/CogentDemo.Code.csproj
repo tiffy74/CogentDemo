@@ -230,11 +230,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SurfaceControllers\NavigationSurfaceController.cs" />
+    <Compile Include="Controllers\NavigationSurfaceController.cs" />
     <Compile Include="Controllers\NavTreeController.cs" />
     <Compile Include="Controllers\SpotlightApiController.cs" />
-    <Compile Include="JsonHandler.cs" />
-    <Compile Include="Controllers\NavigationApiController.cs" />
     <Compile Include="DocumentTypes\Article.generated.cs" />
     <Compile Include="DocumentTypes\ArticleList.generated.cs" />
     <Compile Include="DocumentTypes\ArticleListSection.generated.cs" />
@@ -245,6 +243,7 @@
     <Compile Include="DocumentTypes\ColumnSettings.generated.cs" />
     <Compile Include="DocumentTypes\Contact.generated.cs" />
     <Compile Include="DocumentTypes\ContactFormSection.generated.cs" />
+    <Compile Include="DocumentTypes\ContactPage.generated.cs" />
     <Compile Include="DocumentTypes\ContentBase.generated.cs" />
     <Compile Include="DocumentTypes\ContentSection.generated.cs" />
     <Compile Include="DocumentTypes\File.generated.cs" />
@@ -267,16 +266,13 @@
     <Compile Include="DocumentTypes\NavigationBase.generated.cs" />
     <Compile Include="DocumentTypes\RichTextContent.generated.cs" />
     <Compile Include="DocumentTypes\TitleComponent.generated.cs" />
+    <Compile Include="JsonHandler.cs" />
+    <Compile Include="Controllers\NavigationApiController.cs" />
     <Compile Include="Models\NavigationApiModel.cs" />
     <Compile Include="Models\NavigationModel.cs" />
     <Compile Include="Models\SpotlightApiModel.cs" />
     <Compile Include="Models\ViewModels\ContactViewModel.cs" />
-    <Compile Include="SurfaceControllers\ContactSurfaceController.cs" />
-    <Compile Include="Extensions\CharExtensions.cs" />
-    <Compile Include="Extensions\DateExtensions.cs" />
-    <Compile Include="Extensions\EnumerableExtensions.cs" />
-    <Compile Include="Extensions\HtmlStringExtensions.cs" />
-    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Controllers\ContactSurfaceController.cs" />
     <Compile Include="Helpers\RazorHelper.cs" />
     <Compile Include="Models\ViewModels\ArticlesViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -408,6 +404,7 @@
     <Folder Include="App_Data\NuGetBackup\20190919-163810\bin\Debug\" />
     <Folder Include="bin\Release\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="SurfaceControllers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />

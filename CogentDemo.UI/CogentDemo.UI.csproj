@@ -552,6 +552,7 @@
     <Content Include="css\fancybox\fancybox_overlay.png" />
     <Content Include="css\fancybox\fancybox_sprite.png" />
     <Content Include="css\fancybox\jquery.fancybox.css" />
+    <Content Include="css\load-more-button.css" />
     <Content Include="css\overwrite.css" />
     <Content Include="css\style.css" />
     <Content Include="default.aspx" />
@@ -633,6 +634,7 @@
     <Content Include="js\google-code-prettify\prettify.css" />
     <Content Include="js\google-code-prettify\prettify.js" />
     <Content Include="scripts\custom.js" />
+    <Content Include="scripts\load-more-button.js" />
     <Content Include="scripts\jquery.cookie.js" />
     <Content Include="scripts\jquery.fancybox-media.js" />
     <Content Include="scripts\jquery.fancybox.pack.js" />
@@ -2037,7 +2039,6 @@
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\Layout.cshtml" />
     <Content Include="Views\Master.cshtml" />
-    <Content Include="Views\Partials\Components\Spotlights.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
@@ -2293,7 +2294,6 @@
     <Content Include="Views\GridPart.cshtml" />
     <Content Include="Views\Partials\Grid\Cogent-Grid.cshtml" />
     <Content Include="Views\Partials\Navigation\SubNavigation.cshtml" />
-    <Content Include="Views\Partials\Navigation\NavSection.cshtml" />
     <Content Include="Views\Partials\Nested\Component\LinkComponent.cshtml" />
     <Content Include="Views\Partials\Nested\Component\SectionTitleComponent.cshtml" />
     <Content Include="Views\Partials\Nested\Component\TitleComponent.cshtml" />
@@ -2303,16 +2303,13 @@
     <Content Include="Views\Partials\Nested\Section\CallToActionSection.cshtml" />
     <Content Include="Views\Partials\Nested\Section\ArticleListSection.cshtml" />
     <Content Include="Views\Partials\Nested\Section\ImageSection.cshtml" />
-    <Content Include="Views\Partials\Nested\Section\SignUpFormSection.cshtml" />
-    <Content Include="Views\Partials\Nested\Section\SingleLineSection.cshtml" />
-    <Content Include="Views\Partials\Renderers\RenderContent.cshtml" />
-    <Content Include="Views\Partials\SectionHeader.cshtml" />
-    <Content Include="Views\Partials\Renderers\RenderHome.cshtml" />
     <Content Include="Views\Partials\Nested\Item\HomePage.cshtml" />
     <Content Include="Views\articlePost.cshtml" />
     <Content Include="Views\Articles.cshtml" />
     <Content Include="Views\Partials\Nested\Section\ContactSection.cshtml" />
     <Content Include="Views\Partials\Navigation\SiteNavigation.cshtml" />
+    <Content Include="Views\AllArticles.cshtml" />
+    <Content Include="Views\Partials\Nested\Section\ContentSection.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2327,6 +2324,7 @@
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\MacroPartials\" />
+    <Folder Include="Views\Partials\Components\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CogentDemo.Code\CogentDemo.Code.csproj">

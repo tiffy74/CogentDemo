@@ -1032,12 +1032,12 @@ ol.inline > li {
        -moz-border-radius: 2px;
             border-radius: 2px;
   }
-  
-  
-  a, a:hover, a:focus, a:active, footer a.text-link:hover, strike, footer ul.link-list li a:hover, .post-meta span a:hover, footer a.text-link,
+
+
+a, a:hover, a:focus, a:active, footer a.text-link:hover, strike, footer ul.link-list li a:hover, .post-meta span a:hover, footer a.text-link,
 ul.meta-post li a:hover, ul.cat li a:hover, ul.recent li h6 a:hover, ul.portfolio-categ li.active a, ul.portfolio-categ li.active a:hover, ul.portfolio-categ li a:hover, ul.related-post li h4 a:hover, span.highlight, article .post-heading h3 a:hover,
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > li > a:hover, .navbar .nav > li > a:focus, .navbar .nav > .active > a:focus, .validation {
-    color: #376E6F;
+    color: #3f687c;
 }
 
 /* === background color === */
@@ -1161,6 +1161,33 @@ ul.clients li:hover {
     box-sizing: border-box;
 }
 
+.content-caption {
+    position: relative;
+    left: -20%;
+    bottom: 200px;
+    background: #000;
+    color: #fff;
+    width: 40%;
+    z-index: 8;
+    padding: 20px;
+    opacity: 0.8;
+    overflow: hidden;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=8);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.articleContent {
+    margin: 0 auto;
+}
+
+.spotlights {
+    margin: 0 auto;
+    width: 85%;
+}
+
 .spotlight {
     position: relative;
     overflow: hidden;
@@ -1175,7 +1202,7 @@ ul.clients li:hover {
     font-weight: 600;
 }
 .spotlightImg {
-    opacity: 0.7;
+    opacity: 0.2;
 }
 
 .spotlightHeading {
@@ -1201,4 +1228,9 @@ left: 10%;
 
 .heroBanner {
     background: #fbfbfb;
+}
+
+.contentBanner {
+    max-height: 350px;
+    overflow: hidden;
 }

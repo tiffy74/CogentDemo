@@ -9,7 +9,9 @@ using Umbraco.Web.WebApi;
 using CogentDemo.Code.Models;
 using Umbraco.Web.Editors;
 
-namespace CogentDemo.Code.SurfaceControllers
+// Api url = /Umbraco/api/NavigationApi/GetNavItems
+
+namespace CogentDemo.Code.Controllers
 {
     [Route("api/[controller]")]
     public class NavigationApiController : UmbracoApiController
