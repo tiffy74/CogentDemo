@@ -87,24 +87,6 @@ header {
     margin: 0;
 }
 
-.banner-caption {
-    position: absolute;
-    left: -20%;
-    bottom: 40px;
-    background: #000;
-    color: #fff;
-    width: 40%;
-    z-index: 8;
-    padding: 20px;
-    opacity: 0.8;
-    overflow: hidden;
-    -moz-opacity: 0.8;
-    filter: alpha(opacity=8);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 section.callaction {
     background: #f9f9f9;
     padding: 50px 0 0 0;
@@ -1143,23 +1125,86 @@ ul.clients li:hover {
     border-bottom: #376E6F 5px solid;
 }
 
-.banner-caption {
-    position: absolute;
-    left: -20%;
-    bottom: 40px;
-    background: #000;
-    color: #fff;
-    width: 40%;
-    z-index: 8;
-    padding: 20px;
-    opacity: 0.8;
-    overflow: hidden;
-    -moz-opacity: 0.8;
-    filter: alpha(opacity=8);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+@media (min-width: 1700px) {
+
+    .banner-caption {
+        position: absolute;
+        left: -20%;
+        bottom: 40px;
+        background: #000;
+        color: #fff;
+        width: 40%;
+        z-index: 8;
+        padding: 20px;
+        opacity: 0.8;
+        overflow: hidden;
+        -moz-opacity: 0.8;
+        filter: alpha(opacity=8);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 }
+
+
+@media (min-width: 1200px) {
+
+    .banner-caption {
+        position: absolute;
+        bottom: 40px;
+        background: #000;
+        color: #fff;
+        width: 40%;
+        z-index: 8;
+        padding: 20px;
+        opacity: 0.8;
+        overflow: hidden;
+        -moz-opacity: 0.8;
+        filter: alpha(opacity=8);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .banner-caption {
+        bottom: 40px;
+        left: -20px;
+        background: #000;
+        color: #fff;
+        width: 100%;
+        z-index: 8;
+        padding: 20px;
+        opacity: 0.8;
+        overflow: hidden;
+        -moz-opacity: 0.8;
+        filter: alpha(opacity=8);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-caption {
+        left: -20%;
+        bottom: 40px;
+        background: #000;
+        color: #fff;
+        z-index: 8;
+        padding: 20px;
+        opacity: 0.8;
+        overflow: hidden;
+        -moz-opacity: 0.8;
+        filter: alpha(opacity=8);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
 
 .content-caption {
     position: relative;

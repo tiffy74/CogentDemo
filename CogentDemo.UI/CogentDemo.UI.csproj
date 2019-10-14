@@ -544,7 +544,6 @@
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap.css" />
-    <Content Include="css\cogent.css" />
     <Content Include="css\cogentDemo.css" />
     <Content Include="css\custom-fonts.css" />
     <Content Include="css\fancybox\blank.gif" />
