@@ -2035,7 +2035,6 @@
     <Content Include="Umbraco_Client\Ui\knockout.js" />
     <Content Include="Umbraco_Client\Ui\knockout.mapping.js" />
     <Content Include="Views\Contact.cshtml" />
-    <Content Include="Views\Editorial.cshtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\Layout.cshtml" />
     <Content Include="Views\Master.cshtml" />
@@ -2291,7 +2290,6 @@
     <Content Include="App_Data\umbraco.config" />
     <Content Include="App_Plugins\OptionButtonsPropertyEditor\package.manifest" />
     <None Include="packages.config" />
-    <Content Include="Views\GridPart.cshtml" />
     <Content Include="Views\Partials\Grid\Cogent-Grid.cshtml" />
     <Content Include="Views\Partials\Navigation\SubNavigation.cshtml" />
     <Content Include="Views\Partials\Nested\Component\LinkComponent.cshtml" />

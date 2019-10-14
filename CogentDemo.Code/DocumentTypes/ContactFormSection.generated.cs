@@ -46,15 +46,6 @@ namespace CogentDemo.Code.DocumentTypes
 		}
 
 		///<summary>
-		/// Content
-		///</summary>
-		[ImplementPropertyType("content")]
-		public IHtmlString Content
-		{
-			get { return this.GetPropertyValue<IHtmlString>("content"); }
-		}
-
-		///<summary>
 		/// Subtitle
 		///</summary>
 		[ImplementPropertyType("subtitle")]

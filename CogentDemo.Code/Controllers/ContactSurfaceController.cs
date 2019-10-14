@@ -5,7 +5,7 @@ using System.Net.Mail;
 
 namespace CogentDemo.Code.Controllers
 {
-    public class LoadMoreSurfaceController : SurfaceController
+    public class ContactSurfaceController : SurfaceController
     {
         public const string PARTIAL_VIEW_FOLDER = "~/Views/Partials/Nested/Section/";
         public ActionResult RenderForm()
