@@ -230,6 +230,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\LoadMoreController.cs" />
     <Compile Include="Controllers\NavigationSurfaceController.cs" />
     <Compile Include="Controllers\NavTreeController.cs" />
     <Compile Include="Controllers\SpotlightApiController.cs" />
@@ -268,6 +269,7 @@
     <Compile Include="DocumentTypes\TitleComponent.generated.cs" />
     <Compile Include="JsonHandler.cs" />
     <Compile Include="Controllers\NavigationApiController.cs" />
+    <Compile Include="Models\LoadMoreModel.cs" />
     <Compile Include="Models\NavigationApiModel.cs" />
     <Compile Include="Models\NavigationModel.cs" />
     <Compile Include="Models\SpotlightApiModel.cs" />

@@ -181,3 +181,100 @@ System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebExceptio
    at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 2019-10-14 16:21:31,586 [P128/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.15.3 application starting on WSX01117
+ 2019-10-14 16:21:31,602 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-10-14 16:21:31,613 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 10ms)
+ 2019-10-14 16:21:31,667 [P128/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-10-14 16:21:31,668 [P128/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-10-14 16:21:31,670 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:21:32,017 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 346ms)
+ 2019-10-14 16:21:32,017 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-10-14 16:21:32,020 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 2ms)
+ 2019-10-14 16:21:32,037 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:21:32,037 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:21:32,037 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-10-14 16:21:32,039 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 1ms)
+ 2019-10-14 16:21:32,040 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:21:32,040 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:21:32,041 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-10-14 16:21:32,043 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 2ms)
+ 2019-10-14 16:21:32,057 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:21:32,057 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:21:32,057 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-10-14 16:21:32,059 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 1ms)
+ 2019-10-14 16:21:32,060 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:21:32,060 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:21:32,060 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-10-14 16:21:32,063 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 2ms)
+ 2019-10-14 16:21:33,493 [P128/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-10-14 16:21:33,697 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2019-10-14 16:21:33,702 [P128/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 4ms)
+ 2019-10-14 16:21:33,754 [P128/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-10-14 16:21:33,940 [P128/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-10-14 16:21:33,940 [P128/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2019-10-14 16:21:33,947 [P128/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2414ms)
+ 2019-10-14 16:21:33,950 [P128/D2/T1] INFO  Umbraco.Web.ExamineStartup - Forcing index InternalMemberIndexSet to be unlocked since it was left in a locked state
+ 2019-10-14 16:21:33,951 [P128/D2/T1] INFO  Umbraco.Web.ExamineStartup - Forcing index InternalIndexSet to be unlocked since it was left in a locked state
+ 2019-10-14 16:21:33,952 [P128/D2/T1] INFO  Umbraco.Web.ExamineStartup - Forcing index ExternalIndexSet to be unlocked since it was left in a locked state
+ 2019-10-14 16:21:34,166 [P128/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://localhost/umbraco
+ 2019-10-14 16:21:34,167 [P128/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost/umbraco (UmbracoModule request)
+ 2019-10-14 16:21:34,349 [P128/D2/T10] INFO  umbraco.content - Load Xml from file...
+ 2019-10-14 16:21:34,352 [P128/D2/T10] INFO  umbraco.content - Loaded Xml from file.
+ 2019-10-14 16:21:34,990 [P128/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:21:34,990 [P128/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:21:34,990 [P128/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-10-14 16:21:34,993 [P128/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 3ms)
+ 2019-10-14 16:21:38,567 [P128/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:21:38,567 [P128/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:21:38,568 [P128/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2019-10-14 16:21:38,570 [P128/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 2ms)
+ 2019-10-14 16:22:34,383 [P128/D2/T15] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:22:34,384 [P128/D2/T15] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:22:34,384 [P128/D2/T15] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-10-14 16:22:34,389 [P128/D2/T15] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 4ms)
+ 2019-10-14 16:22:34,429 [P128/D2/T7] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-10-13 16:22:34
+ 2019-10-14 16:46:24,580 [P128/D2/T161] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:46:24,581 [P128/D2/T161] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:46:24,581 [P128/D2/T161] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2019-10-14 16:46:24,585 [P128/D2/T161] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 4ms)
+ 2019-10-14 16:46:24,699 [P128/D2/T194] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:46:24,699 [P128/D2/T194] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:46:24,700 [P128/D2/T194] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2019-10-14 16:46:24,703 [P128/D2/T194] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 3ms)
+ 2019-10-14 16:46:41,587 [P128/D2/T194] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username tiffany.prosser1@gmail.com from IP address ::1
+ 2019-10-14 16:46:41,589 [P128/D2/T194] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: tiffany.prosser1@gmail.com logged in from IP address ::1
+ 2019-10-14 16:46:42,373 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:46:42,374 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:46:42,374 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
+ 2019-10-14 16:46:42,377 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 3ms)
+ 2019-10-14 16:46:42,385 [P128/D2/T185] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="0" alias="navigationAlias" application="content" title="Navigation" iconClosed="icon-folder" iconOpen="icon-folder-open" type="CogentDemo.Code.Controllers.NavigationTreeController, CogentDemo.Code" /> could not be resolved to a .Net object type
+ 2019-10-14 16:46:42,386 [P128/D2/T185] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="0" alias="navigationTree" application="Navigation" title="Create Navigation" iconClosed="icon-folder" iconOpen="icon-folder-open" type="CogentDemo.Code.Controllers.ApprovalTreeController, CogentDemo.Code" /> could not be resolved to a .Net object type
+ 2019-10-14 16:46:42,386 [P128/D2/T185] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="0" alias="navigationTree" application="Content" title="Create Navigation" iconClosed="icon-folder" iconOpen="icon-folder-open" type="CogentDemo.Code.Controllers.NavigationTreeController, CogentDemo.Code" /> could not be resolved to a .Net object type
+ 2019-10-14 16:46:42,390 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:46:42,390 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:46:42,391 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2019-10-14 16:46:42,391 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 0ms)
+ 2019-10-14 16:46:42,394 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:46:42,394 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:46:42,394 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
+ 2019-10-14 16:46:42,397 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 2ms)
+ 2019-10-14 16:46:42,402 [P128/D2/T185] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="0" alias="navigationAlias" application="content" title="Navigation" iconClosed="icon-folder" iconOpen="icon-folder-open" type="CogentDemo.Code.Controllers.NavigationTreeController, CogentDemo.Code" /> could not be resolved to a .Net object type
+ 2019-10-14 16:46:42,403 [P128/D2/T185] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="0" alias="navigationTree" application="Navigation" title="Create Navigation" iconClosed="icon-folder" iconOpen="icon-folder-open" type="CogentDemo.Code.Controllers.ApprovalTreeController, CogentDemo.Code" /> could not be resolved to a .Net object type
+ 2019-10-14 16:46:42,403 [P128/D2/T185] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="0" alias="navigationTree" application="Content" title="Create Navigation" iconClosed="icon-folder" iconOpen="icon-folder-open" type="CogentDemo.Code.Controllers.NavigationTreeController, CogentDemo.Code" /> could not be resolved to a .Net object type
+ 2019-10-14 16:46:42,430 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:46:42,430 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:46:42,430 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
+ 2019-10-14 16:46:42,434 [P128/D2/T185] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 3ms)
+ 2019-10-14 16:46:42,495 [P128/D2/T192] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="0" alias="navigationAlias" application="content" title="Navigation" iconClosed="icon-folder" iconOpen="icon-folder-open" type="CogentDemo.Code.Controllers.NavigationTreeController, CogentDemo.Code" /> could not be resolved to a .Net object type
+ 2019-10-14 16:46:42,496 [P128/D2/T192] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="0" alias="navigationTree" application="Navigation" title="Create Navigation" iconClosed="icon-folder" iconOpen="icon-folder-open" type="CogentDemo.Code.Controllers.ApprovalTreeController, CogentDemo.Code" /> could not be resolved to a .Net object type
+ 2019-10-14 16:46:42,496 [P128/D2/T192] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="0" alias="navigationTree" application="Content" title="Create Navigation" iconClosed="icon-folder" iconOpen="icon-folder-open" type="CogentDemo.Code.Controllers.NavigationTreeController, CogentDemo.Code" /> could not be resolved to a .Net object type
+ 2019-10-14 16:47:10,171 [P128/D2/T180] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:47:10,171 [P128/D2/T180] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:47:10,172 [P128/D2/T180] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Editors.IEditorValidator
+ 2019-10-14 16:47:10,176 [P128/D2/T180] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Editors.IEditorValidator (took 4ms)
+ 2019-10-14 16:47:10,521 [P128/D2/T180] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-14 16:47:10,521 [P128/D2/T180] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-10-14 16:47:10,521 [P128/D2/T180] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2019-10-14 16:47:10,523 [P128/D2/T180] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 2ms)
+ 2019-10-14 16:47:10,808 [P128/D2/T180] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2019-10-14 16:47:12,430 [P128/D2/T180] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
