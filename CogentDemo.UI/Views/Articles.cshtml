@@ -33,7 +33,7 @@
             <div class="spotlights">
                 @{
                     int articleCount = 0;
-                    foreach (IPublishedContent item in articleList.OrderByDescending(x => x.GetPropertyValue<DateTime>("articleDate")).Take(itemsToShow))
+                    foreach (IPublishedContent item in articleList.OrderByDescending(x => x.GetPropertyValue<DateTime>("articleDate")).Take(6))
                     {
                         string title = item.HasValue("headerTitle") ? item.GetPropertyValue<string>("headerTitle") : item.Name;
                         string description = item.HasValue("headerSubTitle") ? item.GetPropertyValue<string>("headerSubTitle") : item.Name;

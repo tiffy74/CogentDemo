@@ -9,8 +9,11 @@ namespace CogentDemo.Code.Models
     public class Spotlight
     {
         public string SpotlightName { get; set; }
+        public string SpotlightHeading{ get; set; }
         public int Id { get; set; }
         public string Url { get; set; }
+        public string SpotlightText { get; set; }
+        public string ImageUrl { get; set; }
     }
     public class SpotlightApiRequestModel
     {

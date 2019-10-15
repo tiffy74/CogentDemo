@@ -230,7 +230,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\LoadMoreController.cs" />
     <Compile Include="Controllers\NavigationSurfaceController.cs" />
     <Compile Include="Controllers\NavTreeController.cs" />
     <Compile Include="Controllers\SpotlightApiController.cs" />

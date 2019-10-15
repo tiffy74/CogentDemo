@@ -22,18 +22,24 @@ namespace CogentDemo.Code.Controllers
             var _umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
 
             var homeNode = _umbracoHelper.TypedContentAtRoot().FirstOrDefault();
+            var articlesPage = homeNode.Children.Where(x => x.DocumentTypeAlias == "articles" && x.IsVisible()).FirstOrDefault();
+            var articleList = articlesPage.Children.Where(x => x.IsVisible() && x.DocumentTypeAlias == "articlePost").OrderByDescending(x => x.GetPropertyValue<DateTime>("articleDate"));
 
-            if (homeNode != null)
+            if (articleList != null)
             {
                 // here you might add filtering from your request
-                foreach (var contentNode in homeNode.Descendants())
+                foreach (var contentNode in articlesPage.Descendants())
                 {
                     response.Add(new Spotlight
                     {
                         SpotlightName = contentNode.Name,
                         Id = contentNode.Id,
-                        Url = contentNode.Url
-                    });
+                        Url = contentNode.Url,
+                        SpotlightHeading = contentNode.HasValue("headerTitle") ? contentNode.GetPropertyValue<string>("headerTitle") : contentNode.Name,
+                        SpotlightText = contentNode.HasValue("headerSubTitle") ? contentNode.GetPropertyValue<string>("headerSubTitle") : contentNode.Name,
+                        ImageUrl = contentNode.HasValue("headerImage") ? contentNode.GetPropertyValue<string>("headerImage") : contentNode.Url
+                    }
+                    );
                 }
             }
 

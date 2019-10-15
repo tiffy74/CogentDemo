@@ -192,7 +192,6 @@ C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.Code\bin\Debug\
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.Code\bin\Debug\Umbraco.Web.UI.xml
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.Code\bin\Debug\UmbracoExamine.xml
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.Code\obj\Debug\CogentDemo.Code.csprojAssemblyReference.cache
-C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.Code\obj\Debug\CogentDemo.Code.csproj.CoreCompileInputs.cache
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.Code\obj\Debug\CogentDemo.Code.csproj.CopyComplete
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.Code\obj\Debug\CogentDemo.Code.dll
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.Code\obj\Debug\CogentDemo.Code.pdb

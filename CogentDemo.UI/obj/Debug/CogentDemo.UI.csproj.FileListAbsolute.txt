@@ -364,7 +364,6 @@ C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.UI\bin\UmbracoE
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.UI\bin\CogentDemo.Code.pdb
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.UI\obj\Debug\CogentDemo.UI.csprojAssemblyReference.cache
-C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.UI\obj\Debug\CogentDemo.UI.csproj.CoreCompileInputs.cache
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.UI\obj\Debug\CogentDemo.UI.csproj.CopyComplete
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.UI\obj\Debug\CogentDemo.UI.dll
 C:\Users\prost001\source\repos\CogentDemo2\CogentDemo\CogentDemo.UI\obj\Debug\CogentDemo.UI.pdb
