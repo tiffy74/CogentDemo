@@ -16,20 +16,20 @@ namespace CogentDemo.Code.Controllers
         public const string PARTIAL_VIEW_FOLDER = "~/Views/Shared/";
         public ActionResult RenderSpotlights()
         {
-            List<LoadMoreModel> Spotlights = GetAllSpots(0, 3);
-            Session["NumberOfLightsDisplayed"] = 3;
+            List<LoadMoreModel> Spotlights = GetAllSpots(0, 4);
+            Session["NumberOfLightsDisplayed"] = 6;
             return PartialView(PARTIAL_VIEW_FOLDER + "RenderSpotlights.cshtml", Spotlights);
         }
 
         public ActionResult RenderMoreSpotlights()
         {
             var lightsToSkip = Convert.ToInt32(Session["NumberOfLightsDisplayed"]);
-            List<LoadMoreModel> Spotlights = GetAllSpots();
-            Session["NumberOfLightsDisplayed"] = lightsToSkip;
+            List<LoadMoreModel> Spotlights = GetAllSpots(lightsToSkip, 4);
+            Session["NumberOfLightsDisplayed"] = lightsToSkip + 4;
             return PartialView(PARTIAL_VIEW_FOLDER + "RenderMoreSpotlights.cshtml", Spotlights);
         }
 
-        public List<LoadMoreModel> GetAllSpots(int lightsToSkip = 0, int lightsToReturn = 6)
+        public List<LoadMoreModel> GetAllSpots(int lightsToSkip = 0, int lightsToReturn = 4)
         {
             var response = new List<LoadMoreModel>();
             var _umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
@@ -52,9 +52,9 @@ namespace CogentDemo.Code.Controllers
                         SpotlightHeading = contentNode.HasValue("headerTitle") ? contentNode.GetPropertyValue<string>("headerTitle") : contentNode.Name,
                         SpotlightText = contentNode.HasValue("headerSubTitle") ? contentNode.GetPropertyValue<string>("headerSubTitle") : contentNode.Name,
                         ImageUrl = Umbraco.TypedMedia(Image).Url
-                }
-                    );
-                }
+                    });
+                };
+                
             }
             return response;
         }

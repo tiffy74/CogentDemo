@@ -1,13 +1,16 @@
-﻿$(document).ready(function () {
-    $(".moreBox").slice(0, 1).show();
-    if ($(".blogBox:hidden").length != 0) {
-        $("#loadMore").show();
-    }
-    $("#loadMore").on('click', function (e) {
+﻿function loadMoreHandler() {
+    $('.load-more').click(function (e) {
         e.preventDefault();
-        $(".moreBox:hidden").slice(0, 1).slideDown();
-        if ($(".moreBox:hidden").length == 0) {
-            $("#loadMore").fadeOut('slow');
-        }
-    });
-});
+
+        $(this).find('span').text('');
+        $(this).addClass('loading');
+        $(this).find('.spinner').show();
+
+        $.get('https://localhost:44339/umbraco/surface/spotlightsurface/RenderMoreSpotlights', function (data) {
+            $('.tweet__grid').append(data);
+            $('.load-more').removeClass('loading');
+            $('.load-more').find('.spinner').hide();
+            $('.load-more').find('span').text('Load More');
+        });
+    })
+}

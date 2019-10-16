@@ -3,30 +3,23 @@
 
 
 
-            @foreach (var item in Model)
-            {
+@foreach (var item in Model)
+{
 
-                <div class="blogBox moreBox item" id="loadMore">
-                    <div class="span3">
-                        <div class="spotlight">
-                            <div class="spotlightItems">
-                                @{ if (item.ImageUrl != null)
-                                    {
-
-
-                                        <img class="spotlightImg" src="@item.ImageUrl" style="background-image:url('@item.ImageUrl)')">
-                                    }
-
-                                }
-                                <div class="centered_SpotlightText">
-                                    <h6 class="spotlightHeading"><a href="@item.Url">@item.SpotlightHeading</a></h6>
-                                    <p>
-                                        @item.SpotlightText
-                                    </p>
-                                    <a href="@item.Url">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            }
+    <div class="tweet__card">
+        <div class="tweet__avatar">
+            <img class="spotlightImg" src="@item.ImageUrl" style="background-image:url('@item.ImageUrl)')">
+        </div>
+        <div class="tweet__info">
+            <div class="tweet__user-detail">
+                <h6 class="spotlightHeading"><a href="@item.Url">@item.SpotlightHeading</a></h6>
+            </div>
+        </div>
+        <div class="tweet__content">
+            <p>
+                @item.SpotlightText
+            </p>
+            <a href="@item.Url">Read more</a>
+        </div>
+    </div>
+}
