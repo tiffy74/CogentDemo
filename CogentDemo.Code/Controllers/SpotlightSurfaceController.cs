@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web.Configuration;
 using System;
 using Umbraco.Web;
+using Umbraco.Web.Media;
 
 namespace CogentDemo.Code.Controllers
 {
@@ -15,17 +16,17 @@ namespace CogentDemo.Code.Controllers
         public const string PARTIAL_VIEW_FOLDER = "~/Views/Shared/";
         public ActionResult RenderSpotlights()
         {
-            List<LoadMoreModel> Spotlights = GetAllSpots(0, 6);
-            Session["NumberOfLightsDisplayed"] = 6;
+            List<LoadMoreModel> Spotlights = GetAllSpots(0, 3);
+            Session["NumberOfLightsDisplayed"] = 3;
             return PartialView(PARTIAL_VIEW_FOLDER + "RenderSpotlights.cshtml", Spotlights);
         }
 
         public ActionResult RenderMoreSpotlights()
         {
             var lightsToSkip = Convert.ToInt32(Session["NumberOfLightsDisplayed"]);
-            List<LoadMoreModel> Spotlights = GetAllSpots(lightsToSkip, 6);
-            Session["NumberOfLightsDisplayed"] = lightsToSkip +6;
-            return PartialView(PARTIAL_VIEW_FOLDER + "ArticleItemList.cshtml", Spotlights);
+            List<LoadMoreModel> Spotlights = GetAllSpots();
+            Session["NumberOfLightsDisplayed"] = lightsToSkip;
+            return PartialView(PARTIAL_VIEW_FOLDER + "RenderMoreSpotlights.cshtml", Spotlights);
         }
 
         public List<LoadMoreModel> GetAllSpots(int lightsToSkip = 0, int lightsToReturn = 6)
@@ -42,6 +43,7 @@ namespace CogentDemo.Code.Controllers
                 // here you might add filtering from your request
                 foreach (var contentNode in articlesPage.Descendants().Skip(lightsToSkip).Take(lightsToReturn))
                 {
+                    var Image = contentNode.GetPropertyValue<string>("headerImage");
                     response.Add(new LoadMoreModel
                     {
                         SpotlightName = contentNode.Name,
@@ -49,8 +51,8 @@ namespace CogentDemo.Code.Controllers
                         Url = contentNode.Url,
                         SpotlightHeading = contentNode.HasValue("headerTitle") ? contentNode.GetPropertyValue<string>("headerTitle") : contentNode.Name,
                         SpotlightText = contentNode.HasValue("headerSubTitle") ? contentNode.GetPropertyValue<string>("headerSubTitle") : contentNode.Name,
-                        ImageUrl = contentNode.HasValue("headerImage") ? contentNode.GetPropertyValue<string>("headerImage") : contentNode.Url
-                    }
+                        ImageUrl = Umbraco.TypedMedia(Image).Url
+                }
                     );
                 }
             }

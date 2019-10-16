@@ -6,4 +6,57 @@
 }
 @* the fun starts here *@
 
-@{ Html.RenderAction("RenderSpotlights", "SpotlightSurface"); }
+<section id="content">
+    <div class="container">
+        <div class="spotlights">
+
+            @{ Html.RenderAction("RenderSpotlights", "SpotlightSurface"); }
+
+        </div>
+        <div class="row">
+            <div class="span12">
+                <div id="loadSpotlights">
+                    <a href="#">Load More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var lazyloadPage = 2,
+        lazyloadHtml = '';
+
+    function lazyload() {
+
+        $.get('/umbraco/surface/spotlightsurface/RenderMoreSpotlights', function (data) {
+
+            var newData = data.trim();
+
+            if (newData.length > 0) {
+
+                $('#loadmore').css('display', 'inline-block');
+
+            } else {
+
+                $('#loadmore').css('display', 'none');
+            }
+
+            lazyloadHtml = newData;
+        });
+    }
+
+    $('#loadSpotlights').click(function (event) {
+
+        event.preventDefault();
+
+        setTimeout(function () {
+
+            $('#loadSpotlights').append(lazyloadHtml).fadeIn(200);
+            lazyloadPage++;
+            lazyload(lazyloadPage);
+        }, 0);
+    });
+
+    lazyload(lazyloadPage);
+</script>   

@@ -2311,6 +2311,7 @@
     <Content Include="Views\Partials\articleItem.cshtml" />
     <Content Include="Views\Spotlights.cshtml" />
     <Content Include="Views\Shared\RenderSpotlights.cshtml" />
+    <Content Include="Views\Shared\RenderMoreSpotlights.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
