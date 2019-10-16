@@ -1,35 +1,20 @@
-﻿@inherits UmbracoViewPage
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 
-@{
-    string articleId = "nestedContent";
-    IEnumerable<IPublishedContent> article = Umbraco.AssignedContentItem.GetPropertyValue<IEnumerable<IPublishedContent>>(articleId);
-}
-@if (article != null)
-{
-    foreach (IPublishedContent item in article)
-    {
-        string articleContent = item.GetPropertyValue<string>("text");
-        var imageUrl = item.GetPropertyValue<IPublishedContent>("Image");
-        if (articleContent != null)
-        {
-            <section id="content">
-                <div class="articleContent">
-                    <div class="container">
-                        <div class="row">
-                            <article>
-                                <div class="row">
-                                    <p>
-                                        @Html.Raw(articleContent)
-                                    </p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
+@model CogentDemo.Code.Models.Spotlight
+
+<div class="blogBox moreBox item">
+    <div class="span3">
+        <div class="spotlight">
+            <div class="spotlightItems">
+                <img class="spotlightImg" src="@Model.ImageUrl" style="background-image:url('@Model.ImageUrl')">
+                <div class="centered_SpotlightText">
+                    <h6 class="spotlightHeading"><a href="@Model.Url">@Model.SpotlightHeading</a></h6>
+                    <p>
+                        @Model.SpotlightText
+                    </p>
+                    <a href="@Model.Url">Read more</a>
                 </div>
-            </section>
-
-        }
-
-
-    }
-}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,9 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using CogentDemo.Code.Models;
+@using CogentDemo.Code.Controllers
 @{
-	Layout = null;
+    Layout = "Layout.cshtml";
 }
-
 @* the fun starts here *@
 
+@{ Html.RenderAction("RenderSpotlights", "SpotlightSurface"); }

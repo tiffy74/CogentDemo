@@ -233,6 +233,7 @@
     <Compile Include="Controllers\NavigationSurfaceController.cs" />
     <Compile Include="Controllers\NavTreeController.cs" />
     <Compile Include="Controllers\SpotlightApiController.cs" />
+    <Compile Include="Controllers\SpotlightSurfaceController.cs" />
     <Compile Include="DocumentTypes\Article.generated.cs" />
     <Compile Include="DocumentTypes\ArticleList.generated.cs" />
     <Compile Include="DocumentTypes\ArticleListSection.generated.cs" />
@@ -265,9 +266,11 @@
     <Compile Include="DocumentTypes\Navigation.generated.cs" />
     <Compile Include="DocumentTypes\NavigationBase.generated.cs" />
     <Compile Include="DocumentTypes\RichTextContent.generated.cs" />
+    <Compile Include="DocumentTypes\SpotLights.generated.cs" />
     <Compile Include="DocumentTypes\TitleComponent.generated.cs" />
     <Compile Include="JsonHandler.cs" />
     <Compile Include="Controllers\NavigationApiController.cs" />
+    <Compile Include="Models\ArticleListModel.cs" />
     <Compile Include="Models\LoadMoreModel.cs" />
     <Compile Include="Models\NavigationApiModel.cs" />
     <Compile Include="Models\NavigationModel.cs" />

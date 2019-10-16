@@ -9,11 +9,12 @@ namespace CogentDemo.Code.Models
 {
     public class LoadMoreModel
     {
-        public int UmbracoNodeId { get; set; }
-        public Article Article { get; set; }
-        public int ItemsToShow { get; set; }
-        public DateTime ArticleDate { get; set; }
+        public string SpotlightName { get; set; }
+        public string SpotlightHeading { get; set; }
+        public int Id { get; set; }
         public string Url { get; set; }
+        public string SpotlightText { get; set; }
+        public string ImageUrl { get; set; }
 
     }
 }

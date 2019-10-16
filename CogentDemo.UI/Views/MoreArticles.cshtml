@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@using Umbraco.Web.Models
+@using System.Collections.Generic;
+@using System.Web.Mvc.Ajax
+@using ImageProcessor.Web
+@using CogentDemo.Code.DocumentTypes
+@using CogentDemo.Code.Models
+@{
+    Layout = "Layout.cshtml";
+}
+
+    <div class="blogBox moreBox item">
+                            <div class="span3">
+                                <div class="spotlight">
+                                    <div class="spotlightItems">
+                                        <img class="spotlightImg" src="@imageUrl" style="background-image:url('@imageUrl')">
+                                        <div class="centered_SpotlightText">
+                                            <h6 class="spotlightHeading"><a href=""></a></h6>
+                                            <p>
+                                                @description
+                                            </p>
+                                            <a href="@item.Url" data-slide="@articleCount">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>

@@ -2308,6 +2308,9 @@
     <Content Include="Views\AllArticles.cshtml" />
     <Content Include="Views\Partials\Nested\Section\ContentSection.cshtml" />
     <Content Include="Views\Partials\articleItemList.cshtml" />
+    <Content Include="Views\Partials\articleItem.cshtml" />
+    <Content Include="Views\Spotlights.cshtml" />
+    <Content Include="Views\Shared\RenderSpotlights.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2323,6 +2326,7 @@
     <Folder Include="Views\Home\" />
     <Folder Include="Views\MacroPartials\" />
     <Folder Include="Views\Partials\Components\" />
+    <Folder Include="Views\RenderSpotlights\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CogentDemo.Code\CogentDemo.Code.csproj">

@@ -1,0 +1,29 @@
+﻿@model List<CogentDemo.Code.Models.LoadMoreModel>
+
+
+<section id="content">
+    <div class="container">
+        <div class="spotlights">
+
+            @foreach (var item in Model)
+            {
+                <div class="blogBox moreBox item">
+                    <div class="span3">
+                        <div class="spotlight">
+                            <div class="spotlightItems">
+                                <img class="spotlightImg" src="@item.ImageUrl." style="background-image:url('@item.ImageUrl')">
+                                <div class="centered_SpotlightText">
+                                    <h6 class="spotlightHeading"><a href="@item.Url">@item.SpotlightHeading</a></h6>
+                                    <p>
+                                        @item.SpotlightText
+                                    </p>
+                                    <a href="@item.Url">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+</div>
+</section>

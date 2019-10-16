@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CogentDemo.Code.DocumentTypes;
 
 namespace CogentDemo.Code.Models
 {
