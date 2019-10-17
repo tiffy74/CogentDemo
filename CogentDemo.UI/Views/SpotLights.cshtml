@@ -20,3 +20,22 @@
         </button>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+
+        $('.load-more').click(function (e) {
+            e.preventDefault();
+
+            $(this).find('span').text('');
+            $(this).addClass('loading');
+            $(this).find('.spinner').show();
+
+            $.get('/umbraco/surface/spotlightsurface/RenderMoreSpotlights', function (data) {
+                $('.tweet__grid').append(data);
+                $('.load-more').removeClass('loading');
+                $('.load-more').find('.spinner').hide();
+                $('.load-more').find('span').text('Load More');
+            });
+        });
+    });
+</script>

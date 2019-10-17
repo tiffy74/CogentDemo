@@ -1,4 +1,4 @@
-﻿function loadMoreHandler() {
+﻿$(document).ready(function () {
     $('.load-more').click(function (e) {
         e.preventDefault();
 
@@ -12,5 +12,5 @@
             $('.load-more').find('.spinner').hide();
             $('.load-more').find('span').text('Load More');
         });
-    })
-}
+    });
+});
