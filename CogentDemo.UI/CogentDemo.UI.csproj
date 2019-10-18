@@ -551,7 +551,6 @@
     <Content Include="css\fancybox\fancybox_overlay.png" />
     <Content Include="css\fancybox\fancybox_sprite.png" />
     <Content Include="css\fancybox\jquery.fancybox.css" />
-    <Content Include="css\load-more-button.css" />
     <Content Include="css\overwrite.css" />
     <Content Include="css\style.css" />
     <Content Include="default.aspx" />

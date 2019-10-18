@@ -6,15 +6,16 @@
 }
 @* the fun starts here *@
 
-<div class="tweets">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<div class="spotlights">
 
-    <div class="tweet__grid">
+    <div class="spotlight__grid">
 
         @{ Html.RenderAction("RenderSpotlights", "SpotlightSurface"); }
 
     </div>
     <div class="load-more-container">
-        <button class="button load-more" id="buttunz">
+        <button class="button load-more">
             <span>Load More</span>
             <div class="spinner"></div>
         </button>
@@ -22,7 +23,13 @@
 </div>
 <script>
     $(document).ready(function () {
-
+        $("p").click(function () {
+            $(this).hide();
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
         $('.load-more').click(function (e) {
             e.preventDefault();
 
@@ -31,7 +38,7 @@
             $(this).find('.spinner').show();
 
             $.get('/umbraco/surface/spotlightsurface/RenderMoreSpotlights', function (data) {
-                $('.tweet__grid').append(data);
+                $('.spotlight__grid').append(data);
                 $('.load-more').removeClass('loading');
                 $('.load-more').find('.spinner').hide();
                 $('.load-more').find('span').text('Load More');

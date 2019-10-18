@@ -6,16 +6,16 @@
 @foreach (var item in Model)
 {
 
-    <div class="tweet__card">
-        <div class="tweet__avatar">
+    <div class="spotlight__card">
+        <div class="spotlight__avatar">
             <img class="spotlightImg" src="@item.ImageUrl" style="background-image:url('@item.ImageUrl)')">
         </div>
-        <div class="tweet__info">
+        <div class="spotlight__info">
             <div class="tweet__user-detail">
                 <h6 class="spotlightHeading"><a href="@item.Url">@item.SpotlightHeading</a></h6>
             </div>
         </div>
-        <div class="tweet__content">
+        <div class="spotlight__content">
             <p>
                 @item.SpotlightText
             </p>
